@@ -29,17 +29,11 @@ h1 {
   height: 700px;
   border: 5px solid hotpink;
   background-color: white;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%); */
   display: grid;
   grid-template-rows: repeat(var(--grid-rows), 1fr);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
 .canvas-block {
-  border: 1px solid black;
   text-align: center;
 }

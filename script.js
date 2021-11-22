@@ -16,15 +16,12 @@ const canvasSetup = function () {
 };
 canvasSetup();
 
+// Reset function; calls canvas setup and block listener to get app back to usable state
 const clearCanvas = function () {
   canvas.innerHTML = "";
   canvasSetup();
   blockListener();
 };
-
-// canvas.addEventListener("mouseenter", function (e) {
-//   if (e.target.classList.contains("canvas-block")) console.log("hi");
-// });
 
 const blockListener = function () {
   document.querySelectorAll(".canvas-block").forEach((el) => {
@@ -35,4 +32,5 @@ const blockListener = function () {
 };
 blockListener();
 
+// Event Listeners
 resetBtn.addEventListener("click", clearCanvas);
